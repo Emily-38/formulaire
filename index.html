@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="/style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Formulaire d'incription</h1>
+        </header>
+        <form
+            action="https://bio-nature.org/greta/formulaire.php"
+            method="POST"
+        >
+            <label for="civilite">
+                civilité: <input type="radio" name="civilite" value="mr" />Mr
+                <input type="radio" name="civilite" value="mme" />Mme
+                <input type="radio" name="civilite" value="autre" /> autre
+            </label>
+            <br />
+            <label for="nom">
+                votre nom :
+                <input
+                    type="text"
+                    name="nom"
+                    id="nom"
+                    value=""
+                    placeholder="votre nom"
+            /></label>
+            <br />
+            <label for="prenom">
+                votre prenom:
+                <input type="text" name="prenom" placeholder="votre prenom"
+            /></label>
+            <br />
+            <label for="email">
+                votre email:
+                <input type="email" name="email" placeholder="votre email"
+            /></label>
+            <br />
+            <label for="date">
+                date d'arrivée : <input type="date" name="date"
+            /></label>
+            <br />
+            <label for="nbpersonne"
+                >nombre de personne: 1<input
+                    type="range"
+                    name="nbpersonne"
+                    min="1"
+                    max="10"
+                />10</label
+            >
+            <br />
+            <label for="tel"
+                >votre numero de telephone: <input type="tel" name="tel"
+            /></label>
+            <br />
+            <label for="animal">
+                votre animal préferée:
+                <select name="animal" id="animal">
+                    <option value="chien">chien</option>
+                    <option value="chat">chat</option>
+                </select>
+            </label>
+            <br />
+            <label for="message">
+                <textarea
+                    name="message"
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="votre message"
+                >
+                </textarea
+                ><label for="cacher">
+                    <textarea
+                        name="cacher"
+                        id="cacher"
+                        placeholder="je suis cacher"
+                        cols="30"
+                        rows="10"
+                    ></textarea>
+                </label>
+            </label>
+            <br />
+            <label for="color">
+                votre couleur préferée:
+                <input type="color" name="couleur" id="" />
+            </label>
+            <br />
+            <label for="condition"
+                ><input type="checkbox" name="condition" required /> j'accepte
+                les conditon blabla</label
+            >
+            <br />
+
+            <button type="submit">soumettre mon formulaire</button>
+        </form>
+    </body>
+</html>
